@@ -19,6 +19,9 @@ a {
     text-decoration: none;
     color: var(--lt-color4);
 }
+p {
+    line-height: 1.5em;
+}
 /* Common */
 .container {
     max-width: 1000px;
@@ -28,6 +31,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+button {
+    border-radius: var(--br2);
+    border: none;
+    font-size: var(--font-1_1);
+    color: white;
+    
 }
 
 /* Custom Pro */
@@ -52,6 +62,7 @@ a {
     --m5:6em;
     /* Bor radius */
     --br: 1rem;
+    --br2: 1.5em;
     /* DEBUG */
     --border: 1px solid black
 }
@@ -63,10 +74,11 @@ header {
     top: 0;
     left: 0;
     background-color: var(--lt-color1);
-    height: 80px;
+    z-index: 999;
 }
 .container .burger{
-    font-size: var(--font-2)
+    font-size: var(--font-2);
+    color: var(--lt-color4);
 }
 .container .main-menu {
     display: none;
@@ -74,6 +86,7 @@ header {
 .container .main-menu ul li{
     margin-left: var(--m3);
 }
+
 
 /* Main */
 /* Sec One__________ */
@@ -88,6 +101,7 @@ header {
 }
 #sec-one .container .cards .card:first-child {
     padding: 1.2em 1.2em 0em 1.2em;
+    text-align: start;
 }
 /* #sec-one .container .cards .card:last-child {
     margin-bottom: 0px;
@@ -98,17 +112,49 @@ header {
     border-radius: var(--br);
     padding: 1.2em;
     margin-bottom: var(--m1);
+    text-align: center;
 }
+/* Text Card */
 .cards .card > .text-card {
     margin-bottom: var(--m1);
-
-    /* Debug */
-    border: var(--border);
+}
+.text-card > h3 {
+    font-weight: 700;
+    color: var(--lt-color1);
+    font-size: var(--font-2);
+    margin-bottom: var(--m1);
+}
+.text-card p {
+    font-weight: 500;
+    font-size: var(--font-1_1);
+    margin-bottom: var(--m1);
+}
+.text-card button {
+    background-color: var(--lt-color1);
+    padding: .4rem 2.5rem;
+}
+.text-card button a .fa-apple {
+    margin-right: .5em;
+    
+    color: white;
 }
 .cards .card > .img-card {
-    /* Debug */
-    border: var(--border);
+    position: relative;
+    top: 0.4rem;
 }
+.cards .card .ic-big {
+    font-size:5rem;
+    color: var(--lt-color1);
+    margin-bottom: 2rem;
+}
+.cards .card h3 {
+    font-size: var(--font-2);
+    color: var(--lt-color1);
+    font-weight: 700;
+    margin-bottom: var(--m1);
+}
+
+
 
 /* Sec plan________ */
 #sec-plan {
@@ -122,9 +168,20 @@ header {
 .plan-cont .plan, .plan-b {
     width: 100%;
 }
-.plan-cont .plan {
-    /* Debug */
-    padding-bottom:2em;
+.plan-cont .plan h3 {
+    color: white;
+    font-weight: 700;
+    font-size: var(--font-1_1);
+    margin-top: var(--m4);
+}
+
+.plan-cont .plan p {
+    margin-top: var(--m2);
+}
+.plan-cont .plan p {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
 }
 .plan-cont .plan-b {
     padding: 1.2em;
@@ -133,6 +190,28 @@ header {
     border-radius: var(--br);
     margin-top: var(--m1);
 }
+.plan-cont .plan-b h3 {
+    font-weight: 700;
+    font-size: var(--font-1_1);
+    margin-bottom: 1rem;
+}
+.plan-cont .plan-b p {
+    margin-bottom: 1.2rem;
+}
+.plan-b .arrow {
+    width: 2em;
+    height: 2em;
+    background-color: var(--lt-color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    
+}
+
 
 /* Sec users_________ */
 #sec-users {
@@ -243,6 +322,13 @@ footer .container {
         width: calc(100% / 3 - 1.5rem * 2 / 3);
         margin-bottom: 0rem;
     } 
+    .cards .card > .img-card {
+        width: 50%;
+    }
+    /* Sec Plan */
+    .plan-cont .plan h3 {
+        font-size: 3.5rem;
+    }
     /* Sec Benefits */
     #sec-ben .container .row-benf {
         display: flex;
@@ -284,12 +370,19 @@ footer .container {
     }
     .container .main-menu ul{
         display: flex;
+        
+    }
+    .container .main-menu ul li:last-child a {
+        padding: .5rem .8rem;
+        background-color: white;
+        border-radius: var(--br2);
+        color: black;
     }
     .container .main-menu ul li a {
         font-size:var(--font-1_1)
     }
     /* SEC ONE */
-    #sec-one .container .cards .card{
+    #sec-one .container .cards .card:first-child{
         display: flex;
         justify-content: space-between;
     }
@@ -308,6 +401,14 @@ footer .container {
     .plan-cont .plan, .plan-b {
         width: calc(100% / 2 - 1.5rem);
     }
+    .plan-cont .plan h3 {
+        font-size: 2rem;
+    }
+    .plan-cont .plan-b {
+        margin-top: var(--m4);
+        align-self: flex-end;
+    }
+    
 
     /* SEC USER */
     #sec-users .container .single-user {
