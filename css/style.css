@@ -134,7 +134,53 @@ header {
     margin-top: var(--m1);
 }
 
+/* Sec users_________ */
+#sec-users {
+  
+}
+#sec-users .container{
+    flex-wrap: wrap;
+    text-align: center;
+}
+#sec-users .container .title-users, .single-user {
+    width: 100%;
+    margin-bottom: var(--m1);
+    padding: var(--m1);
+    
+}
+#sec-users .container .single-user {
+    background-color: var(--lt-color3);
+    border-radius: var(--br);
+}
+#sec-users .container .single-user .img-user, .text-user-ex {
+    border: var(--border);
+    margin-bottom: 0.5em;
+}
 
+/* Sec Benefits */
+#sec-ben {
+    width: 100%;
+    background-color: var(--lt-color3);
+}
+#sec-ben .container {
+    flex-wrap: wrap;
+}
+.container .title-benf {
+    width: 100%;
+    margin-bottom: var(--m2);
+    font-size:  var(--font-2);
+    text-align: center;
+}
+.container .row-benf {
+    width: 100%;
+}
+.container .row-benf .col {
+    width: 100%;
+    background-color: var(--lt-color4);
+    border-radius: var(--br);
+    padding: var(--m1);
+    margin-bottom: var(--m1);
+}
 
 /* Footer */
 
@@ -158,6 +204,16 @@ header {
         width: calc(100% / 3 - 1.5rem * 2 / 3);
         margin-bottom: 0rem;
     } 
+    /* Sec Benefits */
+    #sec-ben .container .row-benf {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    #sec-ben .container .row-benf .col {
+        width: calc(100% / 2 - 1rem);
+    }
 }
 
 
@@ -197,5 +253,28 @@ header {
     .plan-cont .plan, .plan-b {
         width: calc(100% / 2 - 1.5rem);
     }
-       
+
+    /* SEC USER */
+    #sec-users .container .single-user {
+        display: flex;
+        justify-content: space-between;
+    }
+    .single-user .img-user {
+        width: 30%;
+    }
+    .single-user .text-user-ex {
+        width: 70%;
+    }
+    
+    /* SEC BENEFITS */
+
+    #sec-ben .container .row-benf {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    #sec-ben .container .row-benf .col {
+        width: calc(100% / 3 - 1rem);
+    }
 }
