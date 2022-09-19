@@ -1,0 +1,98 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HTML */
+html {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 100%;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: var(--lt-color4);
+}
+/* Common */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    padding: var(--m2) 0px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Custom Pro */
+:root {
+    /* List-color */
+    --lt-color1:#0084FD;
+    --lt-color2:#B5DDFF;
+    --lt-color3:#9792E4;
+    --lt-color4:white;
+    /* Font */
+    --font-1: 1rem;
+    --font-1_1:1.25rem;
+    --font-2: 1.5rem;
+    --font-2_1: 1.8rem;
+    --font-3: 2rem;
+    /* Margin */
+    --m1:1em;
+    --m2:1.5em;
+    --m3:2em;
+    --m4:3em;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--lt-color1);
+}
+.container .burger{
+    font-size: var(--font-2)
+}
+.container .main-menu {
+    display: none;
+}
+.container .main-menu ul li{
+    margin-left: var(--m3);
+}
+
+/* Main */
+
+/* Footer */
+
+
+/* __________ MEDIA QUERIS______________ */
+
+/* TABLET */
+@media screen and (min-width:768px) {
+    
+}
+
+
+
+/* DESKTOP */
+@media screen and (min-width:992px) {
+    .container .burger {
+        display: none;
+    }
+    .container .main-menu {
+        display: block;
+    }
+    .container .main-menu ul{
+        display: flex;
+    }
+    .container .main-menu ul li a {
+        font-size:var(--font-1_1)
+    }
+}
