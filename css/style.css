@@ -182,6 +182,32 @@ header {
     margin-bottom: var(--m1);
 }
 
+/* Sec About */
+
+#about {
+    width: 100%;
+    margin-top: var(--m1);
+}
+.container .about-cont {
+    width: 100%;
+    padding: var(--m3) 0px;
+}
+.container .about-cont .text-about, .img-about {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Sec Call to action */
+#call-to {
+    width: 100%;
+    background-color: var(--lt-color3);
+    
+}
+#call-to .container {
+   padding:var(--m3) 0px;
+   text-align: center; 
+}
+
 /* Footer */
 
 
@@ -214,6 +240,22 @@ header {
     #sec-ben .container .row-benf .col {
         width: calc(100% / 2 - 1rem);
     }
+    /* Sec About */
+    .container .about-cont {
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+    }
+    .container .about-cont .text-about {
+        width: 70%;
+        padding: 0em var(--m2);
+        margin-bottom: 0em;
+    }
+    .container .about-cont .img-about {
+        width: 30%;
+        margin-bottom: 0em;
+    }
+
 }
 
 
@@ -277,4 +319,9 @@ header {
     #sec-ben .container .row-benf .col {
         width: calc(100% / 3 - 1rem);
     }
+    /* SEC CALL TO ACTION */
+    #call-to .container {
+        padding:var(--m3) 0px;
+        width: 40%; 
+     }
 }
