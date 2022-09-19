@@ -209,7 +209,20 @@ header {
 }
 
 /* Footer */
-
+footer {
+    width: 100%;
+    background-color: #333333;
+    
+}
+footer .container {
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+.container .one, .two {
+    margin-bottom: var(--m1);
+    text-align: center;
+}
 
 /* __________ MEDIA QUERIS______________ */
 
@@ -324,4 +337,8 @@ header {
         padding:var(--m3) 0px;
         width: 40%; 
      }
+    /* FOOTER */
+    footer .container {
+        width: 35%;
+    }
 }
