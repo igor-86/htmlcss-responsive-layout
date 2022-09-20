@@ -334,6 +334,48 @@ header {
     width: 100%;
     margin-bottom: 1em;
 }
+.text-about h3 {
+    font-size:2.5rem;
+    color: var(--lt-color3);
+    margin-bottom: var(--m1);
+}
+.text-about p {
+    font-size: 1.4rem;
+    margin-bottom: var(--m1);
+}
+.container .about-cont .img-about {
+    position: relative;
+    
+}
+.img-about > .axt {
+    font-size: 8rem;
+    line-height: 0;
+    font-weight: 700;
+    position: absolute;
+    top: 86px;
+    left: 1.5em;
+    transform: rotate(180deg);
+    color: var(--lt-color3);
+}
+.img-about img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: var(--m2);
+}
+.img-about h4 {
+    color:var(--lt-color3);
+    font-size: var(--font-2_1);
+    margin-bottom: var(--m2);
+}
+.img-about button {
+    background-color: var(--lt-color3);
+    border-radius: var(--br2);
+    color: white;
+    padding: 0.8em 1.2em;
+    font-size: 1rem;
+}
 
 /* Sec Call to action */
 #call-to {
@@ -342,8 +384,49 @@ header {
     
 }
 #call-to .container {
+   width: 70%;
+   margin: 0 auto;
    padding:var(--m3) 0px;
    text-align: center; 
+}
+#call-to .container .box-call button {
+    padding: .8em 3em;
+    color: var(--lt-color3);
+}
+.box-call h4, h3, h2, p, button {
+    margin-bottom: var(--m1);
+}
+.box-call h4 {
+    text-transform: uppercase;
+    color: white;
+    font-size: var(--font-1);
+}
+.box-call h3 {
+    font-size: var(--font-2);
+    color: white;
+}
+.box-call h2 {
+    font-size: 2.3rem;
+    color: orange;
+}
+.box-call p {
+    color: white;
+}
+.box-call button > a {
+    color: var(--lt-color3);
+}
+#call-to .container .box-call > ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: disc;
+    color: white;
+    font-size: var(--font-1);
+}
+.box-call ul li {
+    margin-left:2em;
+}
+.box-call ul li a {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -360,6 +443,10 @@ footer .container {
 .container .one, .two {
     margin-bottom: var(--m1);
     text-align: center;
+}
+.container .two span a {
+    color: var(--lt-color3);
+    text-decoration: underline;
 }
 
 /* __________ MEDIA QUERIS______________ */
@@ -433,6 +520,11 @@ footer .container {
         width: 30%;
         margin-bottom: 0em;
     }
+    .img-about img {
+        width: 12rem;
+        height: 12rem;
+    }
+   
 
 }
 
@@ -508,6 +600,11 @@ footer .container {
     #sec-ben .container .row-benf .col {
         width: calc(100% / 3 -  1rem * 2 / 3);
         margin-bottom: 0;
+    }
+    /* SEC ABOUT */
+    .img-about img {
+        width: 15rem;
+        height: 15rem;
     }
     /* SEC CALL TO ACTION */
     #call-to .container {
