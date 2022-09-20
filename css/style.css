@@ -114,6 +114,7 @@ header {
     margin-bottom: var(--m1);
     text-align: center;
 }
+
 /* Text Card */
 .cards .card > .text-card {
     margin-bottom: var(--m1);
@@ -171,7 +172,7 @@ header {
 .plan-cont .plan h3 {
     color: white;
     font-weight: 700;
-    font-size: var(--font-1_1);
+    font-size: 2.3rem;
     margin-top: var(--m4);
 }
 
@@ -197,6 +198,8 @@ header {
 }
 .plan-cont .plan-b p {
     margin-bottom: 1.2rem;
+    font-style: italic;
+    font-size: var(--font-1_1);
 }
 .plan-b .arrow {
     width: 2em;
@@ -209,7 +212,6 @@ header {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-    
 }
 
 
@@ -224,16 +226,49 @@ header {
 #sec-users .container .title-users, .single-user {
     width: 100%;
     margin-bottom: var(--m1);
-    padding: var(--m1);
+    padding: var(--m2);
     
+}
+.title-users h4 {
+    font-size: var(--font-2);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: var(--m1);
+}
+.title-users h3 {
+    font-size: 2.3rem;
+    color: var(--lt-color3);
+    margin-bottom: var(--m1);
+}
+.title-users p {
+    font-size: var(--font-1_1)
 }
 #sec-users .container .single-user {
     background-color: var(--lt-color3);
     border-radius: var(--br);
 }
 #sec-users .container .single-user .img-user, .text-user-ex {
-    border: var(--border);
     margin-bottom: 0.5em;
+}
+.single-user .text-user-ex p {
+    color: white;
+    font-size: var(--font-1_1);
+    margin-bottom: var(--m1);
+}
+.text-user-ex p > span {
+    font-weight: 700;
+    font-size: var(--font-3);
+}
+.single-user .text-user-ex h4 {
+    text-transform: uppercase;
+    font-size: var(--font-2);
+    color: white;
+}
+.img-user img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Sec Benefits */
@@ -247,8 +282,11 @@ header {
 .container .title-benf {
     width: 100%;
     margin-bottom: var(--m2);
-    font-size:  var(--font-2);
     text-align: center;
+}
+.title-benf h3 {
+    color: white;
+    font-size: 2.3rem;
 }
 .container .row-benf {
     width: 100%;
@@ -259,6 +297,27 @@ header {
     border-radius: var(--br);
     padding: var(--m1);
     margin-bottom: var(--m1);
+}
+.col h3 {
+    color: var(--lt-color3);
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+.col h4 {
+    color: var(--lt-color3);
+    font-size: var(--font-2_1);
+    margin-bottom: 1.5rem;
+}
+.col p {
+    color: #474747;
+    font-size: var(--font-1_1);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.col button {
+    background-color: var(--lt-color3);
+    border-radius: var(--br2);
+    padding: .7em 3.5em;
 }
 
 /* Sec About */
@@ -329,6 +388,25 @@ footer .container {
     .plan-cont .plan h3 {
         font-size: 3.5rem;
     }
+    /* Sec Users */
+    #sec-users .container .single-user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .single-user .img-user {
+        flex-shrink: 1;
+    }
+    .img-user img {
+        width: 12rem;
+        height: 12rem;
+        
+    }
+    .single-user .text-user-ex {
+        width: 70%;
+        text-align: start;
+        
+    }
     /* Sec Benefits */
     #sec-ben .container .row-benf {
         display: flex;
@@ -337,7 +415,8 @@ footer .container {
         justify-content: space-between;
     }
     #sec-ben .container .row-benf .col {
-        width: calc(100% / 2 - 1rem);
+        width: calc(100% / 2 - 1rem / 2);
+        margin-bottom: 0;
     }
     /* Sec About */
     .container .about-cont {
@@ -389,6 +468,7 @@ footer .container {
     .card .text-card, .img-card {
         width: 50%;
         padding: 0rem 1rem;
+        align-self: flex-end;
     }
 
     /* SEC PLAN */
@@ -402,7 +482,7 @@ footer .container {
         width: calc(100% / 2 - 1.5rem);
     }
     .plan-cont .plan h3 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .plan-cont .plan-b {
         margin-top: var(--m4);
@@ -411,15 +491,10 @@ footer .container {
     
 
     /* SEC USER */
-    #sec-users .container .single-user {
-        display: flex;
-        justify-content: space-between;
-    }
-    .single-user .img-user {
-        width: 30%;
-    }
-    .single-user .text-user-ex {
-        width: 70%;
+    .img-user img {
+        width: 15rem;
+        height: 15rem;
+        
     }
     
     /* SEC BENEFITS */
@@ -427,11 +502,12 @@ footer .container {
     #sec-ben .container .row-benf {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1rem 1rem;
         justify-content: space-between;
     }
     #sec-ben .container .row-benf .col {
-        width: calc(100% / 3 - 1rem);
+        width: calc(100% / 3 -  1rem * 2 / 3);
+        margin-bottom: 0;
     }
     /* SEC CALL TO ACTION */
     #call-to .container {
