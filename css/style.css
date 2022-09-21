@@ -139,9 +139,8 @@ header {
     
     color: white;
 }
-.cards .card > .img-card {
-    position: relative;
-    top: 0.4rem;
+.cards .card .img-card > img {
+    display: block;
 }
 .cards .card .ic-big {
     font-size:5rem;
